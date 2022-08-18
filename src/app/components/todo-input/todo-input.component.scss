@@ -1,0 +1,13 @@
+@import "../../../assets/mixins.scss";
+
+.todoInput {
+  @include input;
+
+  &-addButton {
+    @include button;
+  }
+}
+
+.mat-form-field {
+  width: 100%;
+}

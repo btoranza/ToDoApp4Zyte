@@ -1,0 +1,9 @@
+<div class="todoInput">
+  <mat-form-field appearance="outline">
+    <mat-label>Add a To Do Note</mat-label>
+    <input matInput [(ngModel)]="toDoContent" />
+  </mat-form-field>
+  <button class="todoInput-addButton" (click)="addToDo(toDoContent)">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

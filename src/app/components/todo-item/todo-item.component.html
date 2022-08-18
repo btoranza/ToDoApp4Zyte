@@ -1,0 +1,16 @@
+<div class="todoItem" [ngClass]="{ 'todoItem--completed': todo!.completed }">
+  <p class="todoItem-text">{{ todo?.text }}</p>
+  <div class="todoItem-buttons">
+    <button
+      mat-icon-button
+      (click)="toggleStatus(todo!.id)"
+      matTooltip="Change status"
+    >
+      <mat-icon *ngIf="!todo!.completed">check</mat-icon>
+      <mat-icon *ngIf="todo!.completed">keyboard_backspace</mat-icon>
+    </button>
+    <button mat-icon-button (click)="deleteToDo(todo!.id)" matTooltip="Delete">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</div>

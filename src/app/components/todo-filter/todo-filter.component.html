@@ -1,0 +1,15 @@
+<div class="todoFilter">
+  <div class="todoFilter-searchInput">
+    <mat-form-field appearance="outline">
+      <mat-label>Search word</mat-label>
+      <input matInput [(ngModel)]="searchValue" />
+    </mat-form-field>
+    <button class="todoFilter-searchButton"><mat-icon>search</mat-icon></button>
+  </div>
+  <div class="todoFilter-checkboxContainer">
+    <mat-checkbox color="accent" [(ngModel)]="completed"
+      >Completed</mat-checkbox
+    >
+    <mat-checkbox color="accent" [(ngModel)]="todo">To do</mat-checkbox>
+  </div>
+</div>

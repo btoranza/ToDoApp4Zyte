@@ -1,0 +1,20 @@
+@mixin input {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+}
+
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 21px;
+  background-color: #ff4081;
+  border-radius: 50%;
+  height: 37px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+}

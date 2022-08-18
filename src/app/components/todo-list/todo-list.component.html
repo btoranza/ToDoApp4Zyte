@@ -1,0 +1,7 @@
+<div class="todoList">
+  <ng-container *ngIf="appState$ | async as appState">
+    <div *ngFor="let todo of appState.todos">
+      <app-todo-item [todo]="todo"></app-todo-item>
+    </div>
+  </ng-container>
+</div>

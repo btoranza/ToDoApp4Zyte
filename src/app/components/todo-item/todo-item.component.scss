@@ -1,0 +1,22 @@
+.todoItem {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: solid 1px #ff4081;
+  max-width: 500px;
+  height: 50px;
+  margin: 10px 0px;
+  padding: 5px 10px;
+
+  &--completed {
+    background-color: #ff408033;
+  }
+
+  &-buttons {
+    display: flex;
+    align-items: center;
+    color: gray;
+  }
+}
